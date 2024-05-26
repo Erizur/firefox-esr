@@ -1,49 +1,41 @@
-# firefox-dev
-![OGImage](https://res.cloudinary.com/axicon/image/upload/c_scale,w_800/v1636892734/GitHub/AnjaloHettiarachchi/firefox-dev/github-og-template-01_mbggye.png "the4runner/firefox-dev")
+# firefox-esr
 
 [![⚡️ Powered By: Copr](https://img.shields.io/badge/⚡️_Powered_by-COPR-blue?style=flat-square)](https://copr.fedorainfracloud.org/)
 ![📦 Architecture: x86_64](https://img.shields.io/badge/📦_Architecture-x86__64-blue?style=flat-square)
 [![Latest Version](https://img.shields.io/badge/dynamic/json?color=blue&label=Version&query=builds.latest.source_package.version&url=https%3A%2F%2Fcopr.fedorainfracloud.org%2Fapi_3%2Fpackage%3Fownername%3Dthe4runner%26projectname%3Dfirefox-dev%26packagename%3Dfirefox-dev%26with_latest_build%3DTrue&style=flat-square&logo=firefoxbrowser&logoColor=blue)](https://copr.fedorainfracloud.org/coprs/the4runner/firefox-dev/package/firefox-dev/)
 [![Copr build status](https://copr.fedorainfracloud.org/coprs/the4runner/firefox-dev/package/firefox-dev/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/the4runner/firefox-dev/package/firefox-dev/)
 
-An unofficial RPM package of [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer) designed for [Fedora](https://getfedora.org).
+An unofficial RPM package of [Firefox ESR](https://www.mozilla.org/en-US/firefox/enterprise) designed for [Fedora](https://getfedora.org).
+This repo was based on the original RPM packaging system created by [the4runner](https://github.com/the4runner/firefox-dev/) for the [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer).
 
 ## ⚠️ Special Note
 This is just an RPM packaging for the said software and does not include any licenses of its own. The only additional file included is the `.desktop` file written based on the original executable from the Firefox Release Channel (default).
 
 ## About the Application
-This is a pre-beta release of Mozilla Firefox intended for Web developers and
-enthusiasts who want early access to new features. It receives new updates
-(almost) daily, adding and refining support for the very latest Web standards
-that won't make it into the stable release of Firefox for some months. It also
-comes with some addons for Web development enabled by default.
+Firefox ESR releases are maintained for more than a year, with point releases that coincide with regular Firefox releases. 
+These point releases contain security upgrades.
 
-You may find that Developer Edition works just fine for everyday
-use: Some users set it as their default Web browser. You can sign in to your
-normal Firefox account and sync your preferences, extensions, and bookmarks,
-etc. Or you can keep the Firefox versions separate, and use different profiles,
-even different browser UI themes. Firefox Developer Edition can install
-alongside the stable release of Firefox, making it easy to switch back and forth
-between the two versions.
+The ESR version will also have a three cycle (at least 12 weeks) overlap between the time of a new release and the end-of-life of the previous release to permit testing and certification before you deploy the new version to your organization.
 
-That being said, a lot of the technology here is still experimental, and there
-will very likely be some bugs, so just remember that by using Developer Edition,
-you're helping Mozilla make Firefox the best Web browser they can. And have fun!
+We rely on Firefox ESR users to provide feedback for each new ESR release. 
+During the first two cycles, please report any bugs such as web compatibility regressions and stability issues.
+
+Maintenance of each ESR through point releases is limited to high-risk/high-impact security vulnerabilities, and in rare cases may also include off-schedule releases that address live security vulnerabilities. Backports of any functional enhancements and/or stability fixes are not in scope. 
 
 Bugs related to Firefox Developer Edition should be reported directly to Mozilla: [https://bugzilla.mozilla.org](https://bugzilla.mozilla.org)
 
 Bugs related to this package should be reported at this GitHub project:
-[https://github.com/the4runner/firefox-dev/issues](https://github.com/the4runner/firefox-dev/issues)
+[https://github.com/Erizur/firefox-esr/issues](https://github.com/Erizur/firefox-esr/issues)
 
 ## Installation Instructions
-1. Enable `the4runner/firefox-dev` [Copr](https://copr.fedorainfracloud.org/) repository according to your package manager.
+1. Enable `erizur/firefox-esr` [Copr](https://copr.fedorainfracloud.org/) repository according to your package manager.
 
 ```Shell
 # If you are using dnf... (you need to have 'dnf-plugins-core' installed)
-sudo dnf copr enable the4runner/firefox-dev
+sudo dnf copr enable erizur/firefox-esr
 
 # If you are using yum... (you need to have 'yum-plugins-copr' installed)
-sudo yum copr enable the4runner/firefox-dev
+sudo yum copr enable erizur/firefox-esr
 ```
 
 2. (Optional) Update your package list.
@@ -55,11 +47,11 @@ sudo dnf check-update
 3. Execute the following command to install the package.
 
 ```Shell
-sudo dnf install firefox-dev
+sudo dnf install firefox-esr
 ```
 
 4. Launch the application from the Application Menu or execute following command in terminal.
 
 ```Shell
-firefox-aurora
+firefox-esr
 ```

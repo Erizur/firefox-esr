@@ -23,9 +23,15 @@ Recommends:         (gnome-browser-connector if gnome-shell)
 Requires(post):     gtk-update-icon-cache
 
 %description
-This is the ESR edition for the Firefox Web Browser, packaged for Fedora Linux.
-It is a stable version of the web browser with several backported/additional security patches.
-Use this as you like, enjoy!
+Firefox ESR releases are maintained for more than a year, with point releases that coincide with regular Firefox releases. 
+These point releases contain security upgrades.
+
+The ESR version will also have a three cycle (at least 12 weeks) overlap between the time of a new release and the end-of-life of the previous release to permit testing and certification before you deploy the new version to your organization.
+
+We rely on Firefox ESR users to provide feedback for each new ESR release. 
+During the first two cycles, please report any bugs such as web compatibility regressions and stability issues.
+
+Maintenance of each ESR through point releases is limited to high-risk/high-impact security vulnerabilities, and in rare cases may also include off-schedule releases that address live security vulnerabilities. Backports of any functional enhancements and/or stability fixes are not in scope.
 
 Bugs related to Firefox should be reported directly to Mozilla: 
 <https://bugzilla.mozilla.org/>
