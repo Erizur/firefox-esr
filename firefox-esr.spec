@@ -4,7 +4,7 @@
 %global             internal_name firefox-esr
 
 Name:               firefox-esr
-Version:            115.12.0esr
+Version:            115.13.0esr
 Release:            1%{?dist}
 Summary:            Firefox ESR Web browser
 
