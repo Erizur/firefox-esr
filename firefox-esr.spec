@@ -2,6 +2,7 @@
 %global             application_name firefox-esr
 %global             full_name firefox-esr
 %global             internal_name firefox-esr
+%global             debug_package %{nil}
 
 Name:               firefox-esr
 Version:            115.13.0esr
