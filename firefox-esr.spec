@@ -11,7 +11,7 @@ Summary:            Firefox ESR Web browser
 
 License:            MPLv1.1 or GPLv2+ or LGPLv2+
 URL:                https://www.mozilla.org/en-US/firefox/enterprise/
-Source0:            https://download-installer.cdn.mozilla.net/pub/firefox/releases/%{version}/linux-x86_64/en-US/firefox-%{version}.tar.xz
+Source0:            https://download-installer.cdn.mozilla.net/pub/firefox/releases/%{version}/linux-x86_64/en-US/firefox-%{version}.tar.bz2
 Source1:            %{internal_name}.desktop
 Source2:            policies.json
 Source3:            %{internal_name}
