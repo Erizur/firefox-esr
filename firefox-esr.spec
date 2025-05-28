@@ -5,7 +5,7 @@
 %global             debug_package %{nil}
 
 Name:               firefox-esr
-Version:            128.10.1esr
+Version:            128.11.0esr
 Release:            1%{?dist}
 Summary:            Firefox ESR Web browser
 
