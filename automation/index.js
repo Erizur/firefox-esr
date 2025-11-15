@@ -14,7 +14,7 @@ function whiteSpaces(amount) {
 }
 
 const downloadUrl = await fetch(
-  'https://download.mozilla.org/download/en-US/?product=firefox-esr-latest-ssl&os=linux64&lang=en-US',
+  'https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64&lang=en-US',
   {
     compress: true,
     redirect: 'manual',
